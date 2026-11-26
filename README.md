@@ -34,6 +34,17 @@ for permission: motion on iOS (`NSMotionUsageDescription`, which an app's own `u
 word), activity recognition on Android 10 and later.
 
 
+## Status
+
+ui-pedometer is in Preview, as ui's device packages are (ui's
+[docs/stability.md](https://github.com/eskiu-packages/ui/blob/main/docs/stability.md)): `eskiuc
+test` checks it against stand-ins for the platform, not on devices, and its API may still change
+in a minor release.
+
+It counts steps on iOS and Android only. The web and the desktops (native or `--webview`)
+have no step counter: `pedometer_supported()` is false and every hook answers
+`StepsUnavailable`, so an app shows that there is no count rather than zero steps.
+
 ## Documentation
 
 Every public function and type, with its documentation, is in the [API reference](docs/api.md).
