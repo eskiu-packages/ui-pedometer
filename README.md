@@ -54,7 +54,7 @@ Every public function and type, with its documentation, is in the [API reference
 In an app made with `ui new`:
 
 ```bash
-eskiuc add pedometer --git https://github.com/eskiu-packages/ui-pedometer --rev v0.1.4
+eskiuc add pedometer --git https://github.com/eskiu-packages/ui-pedometer --rev v0.1.5
 ```
 ## Where the steps come from
 
